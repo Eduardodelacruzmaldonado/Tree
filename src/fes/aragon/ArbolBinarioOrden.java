@@ -27,12 +27,12 @@ public class ArbolBinarioOrden<E> {
             previo.izquierdo=new Nodo<>(dato,"izquierdo,padre="+previo.dato);
         }
     }
-/*
-    public void eliminar(int dato){
+
+    public void eliminar(Integer dato){
         Nodo tmp, nodo, n=raiz, previo=null;
-        while ((n!=null) && (n.dato! =dato)){
+        while (n!=null && n.dato!=dato){
             previo=n;
-            if (n.dato < dato){
+            if ((Integer) n.dato < dato){
                 n=n.derecho;
             }else {
                 n=n.izquierdo;
@@ -66,6 +66,5 @@ public class ArbolBinarioOrden<E> {
         }
     }
 
- */
 
 }
